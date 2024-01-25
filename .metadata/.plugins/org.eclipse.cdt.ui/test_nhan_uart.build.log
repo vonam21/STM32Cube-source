@@ -1,0 +1,149 @@
+21:19:38 **** Incremental Build of configuration Debug for project test_nhan_uart ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:145:32: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive_IT' differ in signedness [-Wpointer-sign]
+  145 |   HAL_UART_Receive_IT(&huart1, receive, 1);
+      |                                ^~~~~~~
+      |                                |
+      |                                char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c:159:15: warning: unused variable 't' [-Wunused-variable]
+  159 |           int t = SendATCommand();
+      |               ^
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:316:56: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+  316 |                  if((strcmp(receive,"\n")==0)||(strcmp(chuoi_receive,"OK")==0)||(strcmp(chuoi_receive,"+CMQTTSTART: 0")==0)||(strcmp(chuoi_receive,"PB DONE")==0))
+      |                                                        ^~~~~~~~~~~~~
+      |                                                        |
+      |                                                        uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:62:
+C:\ST\STM32CubeIDE_1.13.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/string.h:36:18: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   36 | int      strcmp (const char *, const char *);
+      |                  ^~~~~~~~~~~~
+../Core/Src/main.c:316:89: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+  316 |                  if((strcmp(receive,"\n")==0)||(strcmp(chuoi_receive,"OK")==0)||(strcmp(chuoi_receive,"+CMQTTSTART: 0")==0)||(strcmp(chuoi_receive,"PB DONE")==0))
+      |                                                                                         ^~~~~~~~~~~~~
+      |                                                                                         |
+      |                                                                                         uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:62:
+C:\ST\STM32CubeIDE_1.13.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/string.h:36:18: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   36 | int      strcmp (const char *, const char *);
+      |                  ^~~~~~~~~~~~
+../Core/Src/main.c:316:134: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+  316 |                  if((strcmp(receive,"\n")==0)||(strcmp(chuoi_receive,"OK")==0)||(strcmp(chuoi_receive,"+CMQTTSTART: 0")==0)||(strcmp(chuoi_receive,"PB DONE")==0))
+      |                                                                                                                                      ^~~~~~~~~~~~~
+      |                                                                                                                                      |
+      |                                                                                                                                      uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:62:
+C:\ST\STM32CubeIDE_1.13.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/string.h:36:18: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   36 | int      strcmp (const char *, const char *);
+      |                  ^~~~~~~~~~~~
+../Core/Src/main.c:320:36: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+  320 |                          if(strcmp(chuoi_receive,"PB DONE" == 0) && (number_receive ==0))
+      |                                    ^~~~~~~~~~~~~
+      |                                    |
+      |                                    uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:62:
+C:\ST\STM32CubeIDE_1.13.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/string.h:36:18: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   36 | int      strcmp (const char *, const char *);
+      |                  ^~~~~~~~~~~~
+../Core/Src/main.c:320:60: warning: passing argument 2 of 'strcmp' makes pointer from integer without a cast [-Wint-conversion]
+  320 |                          if(strcmp(chuoi_receive,"PB DONE" == 0) && (number_receive ==0))
+      |                                                  ~~~~~~~~~~^~~~
+      |                                                            |
+      |                                                            int
+In file included from ../Core/Src/main.c:62:
+C:\ST\STM32CubeIDE_1.13.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/string.h:36:32: note: expected 'const char *' but argument is of type 'int'
+   36 | int      strcmp (const char *, const char *);
+      |                                ^~~~~~~~~~~~
+../Core/Src/main.c:320:29: warning: argument 2 null where non-null expected [-Wnonnull]
+  320 |                          if(strcmp(chuoi_receive,"PB DONE" == 0) && (number_receive ==0))
+      |                             ^~~~~~
+In file included from ../Core/Src/main.c:62:
+C:\ST\STM32CubeIDE_1.13.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/string.h:36:10: note: in a call to function 'strcmp' declared 'nonnull'
+   36 | int      strcmp (const char *, const char *);
+      |          ^~~~~~
+../Core/Src/main.c:327:36: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+  327 |                          if(strcmp(chuoi_receive,"+CMQTTSTART: 0" == 0) && (number_receive ==1))
+      |                                    ^~~~~~~~~~~~~
+      |                                    |
+      |                                    uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:62:
+C:\ST\STM32CubeIDE_1.13.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/string.h:36:18: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   36 | int      strcmp (const char *, const char *);
+      |                  ^~~~~~~~~~~~
+../Core/Src/main.c:327:67: warning: passing argument 2 of 'strcmp' makes pointer from integer without a cast [-Wint-conversion]
+  327 |                          if(strcmp(chuoi_receive,"+CMQTTSTART: 0" == 0) && (number_receive ==1))
+      |                                                  ~~~~~~~~~~~~~~~~~^~~~
+      |                                                                   |
+      |                                                                   int
+In file included from ../Core/Src/main.c:62:
+C:\ST\STM32CubeIDE_1.13.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/string.h:36:32: note: expected 'const char *' but argument is of type 'int'
+   36 | int      strcmp (const char *, const char *);
+      |                                ^~~~~~~~~~~~
+../Core/Src/main.c:327:29: warning: argument 2 null where non-null expected [-Wnonnull]
+  327 |                          if(strcmp(chuoi_receive,"+CMQTTSTART: 0" == 0) && (number_receive ==1))
+      |                             ^~~~~~
+In file included from ../Core/Src/main.c:62:
+C:\ST\STM32CubeIDE_1.13.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/string.h:36:10: note: in a call to function 'strcmp' declared 'nonnull'
+   36 | int      strcmp (const char *, const char *);
+      |          ^~~~~~
+../Core/Src/main.c:340:53: warning: assignment to 'uint8_t' {aka 'unsigned char'} from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  340 |                          chuoi_receive[stt_receive] = receive;
+      |                                                     ^
+../Core/Src/main.c:345:26: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  345 |                  sprintf(data33333,"%d",count_uart++);
+      |                          ^~~~~~~~~
+      |                          |
+      |                          unsigned char *
+In file included from ../Core/Src/main.c:63:
+C:\ST\STM32CubeIDE_1.13.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:349:48: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive_IT' differ in signedness [-Wpointer-sign]
+  349 |                   HAL_UART_Receive_IT(&huart1, receive, 1);
+      |                                                ^~~~~~~
+      |                                                |
+      |                                                char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'Init_SIMA7680':
+../Core/Src/main.c:78:1: warning: control reaches end of non-void function [-Wreturn-type]
+   78 | }
+      | ^
+../Core/Src/main.c: In function 'SendATCommand':
+../Core/Src/main.c:108:1: warning: control reaches end of non-void function [-Wreturn-type]
+  108 | }
+      | ^
+arm-none-eabi-gcc -o "test_nhan_uart.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\test_nhan_uart\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_nhan_uart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_nhan_uart.elf
+ 
+arm-none-eabi-size   test_nhan_uart.elf 
+arm-none-eabi-objdump -h -S  test_nhan_uart.elf  > "test_nhan_uart.list"
+arm-none-eabi-objcopy  -O ihex  test_nhan_uart.elf  "test_nhan_uart.hex"
+   text	   data	    bss	    dec	    hex	filename
+  13684	    104	   2144	  15932	   3e3c	test_nhan_uart.elf
+arm-none-eabi-objcopy  -O binary  test_nhan_uart.elf  "test_nhan_uart.bin"
+Finished building: default.size.stdout
+ 
+Finished building: test_nhan_uart.hex
+Finished building: test_nhan_uart.bin
+ 
+ 
+Finished building: test_nhan_uart.list
+ 
+
+21:19:39 Build Finished. 0 errors, 16 warnings. (took 944ms)
+

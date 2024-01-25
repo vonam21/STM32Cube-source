@@ -1,0 +1,86 @@
+16:00:03 **** Incremental Build of configuration Debug for project ngat ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+../Core/Src/main.c:68:29: error: unknown type name 'bool'
+   68 | uint32_t count_cycles_state(bool n) {
+      |                             ^~~~
+../Core/Src/main.c:64:1: note: 'bool' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+   63 | #include <stdio.h>
+  +++ |+#include <stdbool.h>
+   64 | int timer =0;
+../Core/Src/main.c: In function 'Read_DHT11':
+../Core/Src/main.c:113:11: error: 'count_cycles' undeclared (first use in this function)
+  113 |           count_cycles[i] = count_cycles_state(0);
+      |           ^~~~~~~~~~~~
+../Core/Src/main.c:113:11: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:113:29: warning: implicit declaration of function 'count_cycles_state' [-Wimplicit-function-declaration]
+  113 |           count_cycles[i] = count_cycles_state(0);
+      |                             ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:126:29: error: 'CYCLE_MAX' undeclared (first use in this function)
+  126 |           if ((lowCycles >= CYCLE_MAX) || (highCycles >= CYCLE_MAX)) {
+      |                             ^~~~~~~~~
+../Core/Src/main.c:157:5: warning: 'main' is normally a non-static function [-Wmain]
+  157 | int main(void)
+      |     ^~~~
+../Core/Src/main.c:250:13: error: invalid storage class for function 'MX_TIM2_Init'
+  250 | static void MX_TIM2_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:295:13: error: invalid storage class for function 'MX_USART1_UART_Init'
+  295 | static void MX_USART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:328:13: error: invalid storage class for function 'MX_GPIO_Init'
+  328 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:389:15: error: 'data' redeclared as different kind of symbol
+  389 | unsigned char data[] = "day la chuoi\n";
+      |               ^~~~
+../Core/Src/main.c:78:39: note: previous definition of 'data' with type 'uint8_t *' {aka 'unsigned char *'}
+   78 | int Read_DHT11(uint32_t* arr,uint8_t* data) {
+      |                              ~~~~~~~~~^~~~
+../Core/Src/main.c:449:1: error: expected declaration or statement at end of input
+  449 | }
+      | ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:53:13: warning: 'MX_GPIO_Init' used but never defined
+   53 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:54:13: warning: 'MX_USART1_UART_Init' used but never defined
+   54 | static void MX_USART1_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:55:13: warning: 'MX_TIM2_Init' used but never defined
+   55 | static void MX_TIM2_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'Read_DHT11':
+../Core/Src/main.c:468: warning: control reaches end of non-void function [-Wreturn-type]
+At top level:
+../Core/Src/main.c:440:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  440 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:423:6: warning: 'TIM2_IRQHandler' defined but not used [-Wunused-function]
+  423 | void TIM2_IRQHandler(void)
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:394:6: warning: 'HAL_GPIO_EXTI_Callback' defined but not used [-Wunused-function]
+  394 | void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+      |      ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:328:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  328 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:295:13: warning: 'MX_USART1_UART_Init' defined but not used [-Wunused-function]
+  295 | static void MX_USART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:250:13: warning: 'MX_TIM2_Init' defined but not used [-Wunused-function]
+  250 | static void MX_TIM2_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:210:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  210 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:157:5: warning: 'main' defined but not used [-Wunused-function]
+  157 | int main(void)
+      |     ^~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+16:00:03 Build Failed. 10 errors, 14 warnings. (took 427ms)
+

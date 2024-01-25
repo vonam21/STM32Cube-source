@@ -1,0 +1,53 @@
+23:10:01 **** Incremental Build of configuration Debug for project uart1 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:115:11: warning: implicit declaration of function 'snprintf' [-Wimplicit-function-declaration]
+  115 |           snprintf(buff,sizeof(buff),"%lu", data[0]);
+      |           ^~~~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'snprintf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:115:11: warning: incompatible implicit declaration of built-in function 'snprintf' [-Wbuiltin-declaration-mismatch]
+  115 |           snprintf(buff,sizeof(buff),"%lu", data[0]);
+      |           ^~~~~~~~
+../Core/Src/main.c:115:11: note: include '<stdio.h>' or provide a declaration of 'snprintf'
+../Core/Src/main.c:115:41: warning: format '%lu' expects argument of type 'long unsigned int', but argument 4 has type 'int' [-Wformat=]
+  115 |           snprintf(buff,sizeof(buff),"%lu", data[0]);
+      |                                       ~~^   ~~~~~~~
+      |                                         |       |
+      |                                         |       int
+      |                                         long unsigned int
+      |                                       %u
+../Core/Src/main.c:117:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  117 |           HAL_UART_Transmit(&huart1, (uint8_t*)buff, strlen(buff), 10);
+      |                                                      ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:117:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  117 |           HAL_UART_Transmit(&huart1, (uint8_t*)buff, strlen(buff), 10);
+      |                                                      ^~~~~~
+../Core/Src/main.c:117:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "uart1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\uart1\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="uart1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: uart1.elf
+ 
+arm-none-eabi-size   uart1.elf 
+arm-none-eabi-objdump -h -S  uart1.elf  > "uart1.list"
+arm-none-eabi-objcopy  -O ihex  uart1.elf  "uart1.hex"
+   text	   data	    bss	    dec	    hex	filename
+  15132	    100	   2092	  17324	   43ac	uart1.elf
+arm-none-eabi-objcopy  -O binary  uart1.elf  "uart1.bin"
+Finished building: default.size.stdout
+ 
+Finished building: uart1.hex
+Finished building: uart1.bin
+ 
+ 
+Finished building: uart1.list
+ 
+
+23:10:02 Build Finished. 0 errors, 5 warnings. (took 1s.41ms)
+

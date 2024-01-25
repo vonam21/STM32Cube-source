@@ -1,0 +1,95 @@
+05:41:51 **** Incremental Build of configuration Debug for project uart_sim7680_v3 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:44: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  105 |           HAL_UART_Transmit(&huart1, data, strlen(data), 10);
+      |                                            ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:105:44: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  105 |           HAL_UART_Transmit(&huart1, data, strlen(data), 10);
+      |                                            ^~~~~~
+../Core/Src/main.c:105:44: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:105:51: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  105 |           HAL_UART_Transmit(&huart1, data, strlen(data), 10);
+      |                                                   ^~~~
+      |                                                   |
+      |                                                   unsigned char *
+../Core/Src/main.c:105:51: note: expected 'const char *' but argument is of type 'unsigned char *'
+../Core/Src/main.c:108:52: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  108 |           HAL_UART_Transmit(&huart1, data1, strlen(data1), 10);
+      |                                                    ^~~~~
+      |                                                    |
+      |                                                    unsigned char *
+../Core/Src/main.c:108:52: note: expected 'const char *' but argument is of type 'unsigned char *'
+../Core/Src/main.c:112:52: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  112 |           HAL_UART_Transmit(&huart1, data2, strlen(data2), 10);
+      |                                                    ^~~~~
+      |                                                    |
+      |                                                    unsigned char *
+../Core/Src/main.c:112:52: note: expected 'const char *' but argument is of type 'unsigned char *'
+../Core/Src/main.c:119:52: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  119 |           HAL_UART_Transmit(&huart1, data3, strlen(data3), 10);
+      |                                                    ^~~~~
+      |                                                    |
+      |                                                    unsigned char *
+../Core/Src/main.c:119:52: note: expected 'const char *' but argument is of type 'unsigned char *'
+../Core/Src/main.c:123:52: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  123 |           HAL_UART_Transmit(&huart1, data4, strlen(data4), 10);
+      |                                                    ^~~~~
+      |                                                    |
+      |                                                    unsigned char *
+../Core/Src/main.c:123:52: note: expected 'const char *' but argument is of type 'unsigned char *'
+../Core/Src/main.c:127:52: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  127 |           HAL_UART_Transmit(&huart1, data5, strlen(data5), 10);
+      |                                                    ^~~~~
+      |                                                    |
+      |                                                    unsigned char *
+../Core/Src/main.c:127:52: note: expected 'const char *' but argument is of type 'unsigned char *'
+../Core/Src/main.c:131:52: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  131 |           HAL_UART_Transmit(&huart1, data6, strlen(data6), 10);
+      |                                                    ^~~~~
+      |                                                    |
+      |                                                    unsigned char *
+../Core/Src/main.c:131:52: note: expected 'const char *' but argument is of type 'unsigned char *'
+../Core/Src/main.c:135:52: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  135 |           HAL_UART_Transmit(&huart1, data7, strlen(data7), 10);
+      |                                                    ^~~~~
+      |                                                    |
+      |                                                    unsigned char *
+../Core/Src/main.c:135:52: note: expected 'const char *' but argument is of type 'unsigned char *'
+../Core/Src/main.c:139:52: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  139 |           HAL_UART_Transmit(&huart1, data8, strlen(data8), 10);
+      |                                                    ^~~~~
+      |                                                    |
+      |                                                    unsigned char *
+../Core/Src/main.c:139:52: note: expected 'const char *' but argument is of type 'unsigned char *'
+../Core/Src/main.c:143:52: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  143 |           HAL_UART_Transmit(&huart1, data9, strlen(data9), 10);
+      |                                                    ^~~~~
+      |                                                    |
+      |                                                    unsigned char *
+../Core/Src/main.c:143:52: note: expected 'const char *' but argument is of type 'unsigned char *'
+arm-none-eabi-gcc -o "uart_sim7680_v3.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\uart_sim7680_v3\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="uart_sim7680_v3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: uart_sim7680_v3.elf
+ 
+arm-none-eabi-size   uart_sim7680_v3.elf 
+arm-none-eabi-objdump -h -S  uart_sim7680_v3.elf  > "uart_sim7680_v3.list"
+arm-none-eabi-objcopy  -O ihex  uart_sim7680_v3.elf  "uart_sim7680_v3.hex"
+   text	   data	    bss	    dec	    hex	filename
+   6704	     20	   1644	   8368	   20b0	uart_sim7680_v3.elf
+arm-none-eabi-objcopy  -O binary  uart_sim7680_v3.elf  "uart_sim7680_v3.bin"
+Finished building: default.size.stdout
+ 
+Finished building: uart_sim7680_v3.hex
+Finished building: uart_sim7680_v3.list
+Finished building: uart_sim7680_v3.bin
+ 
+ 
+ 
+
+05:41:52 Build Finished. 0 errors, 12 warnings. (took 900ms)
+

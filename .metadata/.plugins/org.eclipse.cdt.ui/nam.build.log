@@ -1,0 +1,10 @@
+20:23:33 **** Incremental Build of configuration Debug for project nam ****
+make -j8 all 
+arm-none-eabi-size   nam.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3492	     20	   1572	   5084	   13dc	nam.elf
+Finished building: default.size.stdout
+ 
+
+20:23:33 Build Finished. 0 errors, 0 warnings. (took 394ms)
+

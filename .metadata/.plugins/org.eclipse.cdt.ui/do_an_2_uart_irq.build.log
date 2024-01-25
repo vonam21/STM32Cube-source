@@ -1,0 +1,144 @@
+06:42:19 **** Incremental Build of configuration Debug for project do_an_2_uart_irq ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:239:51: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  239 |           HAL_UART_Transmit(&huart1, data, strlen(data), 10);
+      |                                                   ^~~~
+      |                                                   |
+      |                                                   unsigned char *
+In file included from ../Core/Src/main.c:66:
+C:\ST\STM32CubeIDE_1.13.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/string.h:41:18: note: expected 'const char *' but argument is of type 'unsigned char *'
+   41 | size_t   strlen (const char *);
+      |                  ^~~~~~~~~~~~
+../Core/Src/main.c:242:52: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  242 |           HAL_UART_Transmit(&huart1, data1, strlen(data1), 10);
+      |                                                    ^~~~~
+      |                                                    |
+      |                                                    unsigned char *
+In file included from ../Core/Src/main.c:66:
+C:\ST\STM32CubeIDE_1.13.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/string.h:41:18: note: expected 'const char *' but argument is of type 'unsigned char *'
+   41 | size_t   strlen (const char *);
+      |                  ^~~~~~~~~~~~
+../Core/Src/main.c:246:52: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  246 |           HAL_UART_Transmit(&huart1, data2, strlen(data2), 10);
+      |                                                    ^~~~~
+      |                                                    |
+      |                                                    unsigned char *
+In file included from ../Core/Src/main.c:66:
+C:\ST\STM32CubeIDE_1.13.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/string.h:41:18: note: expected 'const char *' but argument is of type 'unsigned char *'
+   41 | size_t   strlen (const char *);
+      |                  ^~~~~~~~~~~~
+../Core/Src/main.c:271:60: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  271 |                   HAL_UART_Transmit(&huart1, data3, strlen(data3), 10);
+      |                                                            ^~~~~
+      |                                                            |
+      |                                                            unsigned char *
+In file included from ../Core/Src/main.c:66:
+C:\ST\STM32CubeIDE_1.13.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/string.h:41:18: note: expected 'const char *' but argument is of type 'unsigned char *'
+   41 | size_t   strlen (const char *);
+      |                  ^~~~~~~~~~~~
+../Core/Src/main.c:275:60: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  275 |                   HAL_UART_Transmit(&huart1, data4, strlen(data4), 10);
+      |                                                            ^~~~~
+      |                                                            |
+      |                                                            unsigned char *
+In file included from ../Core/Src/main.c:66:
+C:\ST\STM32CubeIDE_1.13.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/string.h:41:18: note: expected 'const char *' but argument is of type 'unsigned char *'
+   41 | size_t   strlen (const char *);
+      |                  ^~~~~~~~~~~~
+../Core/Src/main.c:279:60: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  279 |                   HAL_UART_Transmit(&huart1, data5, strlen(data5), 10);
+      |                                                            ^~~~~
+      |                                                            |
+      |                                                            unsigned char *
+In file included from ../Core/Src/main.c:66:
+C:\ST\STM32CubeIDE_1.13.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/string.h:41:18: note: expected 'const char *' but argument is of type 'unsigned char *'
+   41 | size_t   strlen (const char *);
+      |                  ^~~~~~~~~~~~
+../Core/Src/main.c:283:60: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  283 |                   HAL_UART_Transmit(&huart1, data6, strlen(data6), 10);
+      |                                                            ^~~~~
+      |                                                            |
+      |                                                            unsigned char *
+In file included from ../Core/Src/main.c:66:
+C:\ST\STM32CubeIDE_1.13.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/string.h:41:18: note: expected 'const char *' but argument is of type 'unsigned char *'
+   41 | size_t   strlen (const char *);
+      |                  ^~~~~~~~~~~~
+../Core/Src/main.c:286:46: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  286 |                   HAL_UART_Transmit(&huart1, total, strlen(total), 500);
+      |                                              ^~~~~
+      |                                              |
+      |                                              char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:749:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  749 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:290:60: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  290 |                   HAL_UART_Transmit(&huart1, data8, strlen(data8), 10);
+      |                                                            ^~~~~
+      |                                                            |
+      |                                                            unsigned char *
+In file included from ../Core/Src/main.c:66:
+C:\ST\STM32CubeIDE_1.13.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/string.h:41:18: note: expected 'const char *' but argument is of type 'unsigned char *'
+   41 | size_t   strlen (const char *);
+      |                  ^~~~~~~~~~~~
+../Core/Src/main.c:294:60: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  294 |                   HAL_UART_Transmit(&huart1, data9, strlen(data9), 10);
+      |                                                            ^~~~~
+      |                                                            |
+      |                                                            unsigned char *
+In file included from ../Core/Src/main.c:66:
+C:\ST\STM32CubeIDE_1.13.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/string.h:41:18: note: expected 'const char *' but argument is of type 'unsigned char *'
+   41 | size_t   strlen (const char *);
+      |                  ^~~~~~~~~~~~
+../Core/Src/main.c:212:17: warning: unused variable 'humi' [-Wunused-variable]
+  212 |           float humi = data[0] + data[1]*0.1;
+      |                 ^~~~
+../Core/Src/main.c:211:17: warning: unused variable 'temp' [-Wunused-variable]
+  211 |           float temp = data[2] + data[3]*0.1;
+      |                 ^~~~
+../Core/Src/main.c:170:17: warning: unused variable 'stt' [-Wunused-variable]
+  170 |         uint8_t stt[20]= "\n\n\n\n";
+      |                 ^~~
+../Core/Src/main.c:169:17: warning: unused variable 'chuoi1_t' [-Wunused-variable]
+  169 |         uint8_t chuoi1_t[20];
+      |                 ^~~~~~~~
+../Core/Src/main.c:168:17: warning: unused variable 'chuoi1' [-Wunused-variable]
+  168 |         uint8_t chuoi1[20];
+      |                 ^~~~~~
+../Core/Src/main.c:167:17: warning: unused variable 'chuoi_met' [-Wunused-variable]
+  167 |         uint8_t chuoi_met[50];
+      |                 ^~~~~~~~~
+../Core/Src/main.c:166:17: warning: unused variable 'chuoi_ret' [-Wunused-variable]
+  166 |         uint8_t chuoi_ret[1000];
+      |                 ^~~~~~~~~
+../Core/Src/main.c:165:14: warning: unused variable 'chuoi_n' [-Wunused-variable]
+  165 |         char chuoi_n[50];
+      |              ^~~~~~~
+../Core/Src/main.c:164:17: warning: unused variable 'chuoi' [-Wunused-variable]
+  164 |         uint8_t chuoi[20];
+      |                 ^~~~~
+arm-none-eabi-gcc -o "do_an_2_uart_irq.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\do_an_2_uart_irq\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="do_an_2_uart_irq.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: do_an_2_uart_irq.elf
+ 
+arm-none-eabi-size   do_an_2_uart_irq.elf 
+arm-none-eabi-objdump -h -S  do_an_2_uart_irq.elf  > "do_an_2_uart_irq.list"
+arm-none-eabi-objcopy  -O ihex  do_an_2_uart_irq.elf  "do_an_2_uart_irq.hex"
+   text	   data	    bss	    dec	    hex	filename
+  16956	    100	   2900	  19956	   4df4	do_an_2_uart_irq.elf
+arm-none-eabi-objcopy  -O binary  do_an_2_uart_irq.elf  "do_an_2_uart_irq.bin"
+Finished building: default.size.stdout
+ 
+Finished building: do_an_2_uart_irq.hex
+Finished building: do_an_2_uart_irq.bin
+ 
+ 
+Finished building: do_an_2_uart_irq.list
+ 
+
+06:42:20 Build Finished. 0 errors, 19 warnings. (took 1s.7ms)
+

@@ -1,0 +1,10 @@
+20:23:37 **** Incremental Build of configuration Debug for project stm_timer ****
+make -j8 all 
+arm-none-eabi-size   stm_timer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15844	     20	   2548	  18412	   47ec	stm_timer.elf
+Finished building: default.size.stdout
+ 
+
+20:23:37 Build Finished. 0 errors, 0 warnings. (took 470ms)
+

@@ -1,0 +1,13 @@
+20:23:28 **** Incremental Build of configuration Debug for project LED_Blynk ****
+make -j8 all 
+arm-none-eabi-gcc -o "LED_Blynk.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\LED_Blynk\STM32WB55RGVX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LED_Blynk.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.13.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `SystemClock_Config':
+C:/Users/ACER/STM32CubeIDE/workspace_1.13.0/LED_Blynk/Debug/../Core/Src/main.c:22: undefined reference to `__HAL_RCC_PWR_CLK_ENABLE'
+C:/ST/STM32CubeIDE_1.13.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/ACER/STM32CubeIDE/workspace_1.13.0/LED_Blynk/Debug/../Core/Src/main.c:30: undefined reference to `Error_Handler'
+C:/ST/STM32CubeIDE_1.13.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/ACER/STM32CubeIDE/workspace_1.13.0/LED_Blynk/Debug/../Core/Src/main.c:39: undefined reference to `Error_Handler'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:70: LED_Blynk.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+20:23:29 Build Failed. 5 errors, 0 warnings. (took 932ms)
+

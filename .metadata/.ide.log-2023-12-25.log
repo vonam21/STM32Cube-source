@@ -1,0 +1,67 @@
+2023-12-26 00:39:11,072 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 737932920 Bytes (1073741824)
+2023-12-26 00:39:11,798 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 774624008 Bytes (1073741824)
+2023-12-26 00:39:12,593 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 837944664 Bytes (1073741824)
+2023-12-26 00:39:12,918 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-12-26 00:39:12,918 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-12-26 00:39:12,918 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-12-26 00:39:12,918 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2023-12-26 00:39:12,919 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-12-26 00:39:12,920 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.0.202307051724\\db\
+2023-12-26 00:39:13,090 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\MXTmpFiles\license.tmp_save
+2023-12-26 00:39:13,353 [INFO] CodeEngine:279 - Generated code: C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\MXTmpFiles\license.tmp
+2023-12-26 00:39:13,400 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\MXTmpFiles\gpio.tmp_save
+2023-12-26 00:39:13,735 [INFO] CodeEngine:279 - Generated code: C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\MXTmpFiles\gpio.tmp
+2023-12-26 00:39:13,980 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\Core\Src\stm32f1xx_it.c_save
+2023-12-26 00:39:14,358 [INFO] CodeEngine:279 - Generated code: C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\Core\Src\stm32f1xx_it.c
+2023-12-26 00:39:14,378 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\Core\Inc\stm32f1xx_it.h_save
+2023-12-26 00:39:14,484 [INFO] CodeEngine:279 - Generated code: C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\Core\Inc\stm32f1xx_it.h
+2023-12-26 00:39:14,528 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\Core\Src\stm32f1xx_hal_msp.c_save
+2023-12-26 00:39:14,839 [INFO] CodeEngine:279 - Generated code: C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\Core\Src\stm32f1xx_hal_msp.c
+2023-12-26 00:39:14,847 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\MXTmpFiles\system.tmp_save
+2023-12-26 00:39:14,954 [INFO] CodeEngine:279 - Generated code: C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\MXTmpFiles\system.tmp
+2023-12-26 00:39:14,989 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\Core\Inc\stm32f1xx_hal_conf.h_save
+2023-12-26 00:39:15,129 [INFO] CodeEngine:335 - Generated code: C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\Core\Inc\stm32f1xx_hal_conf.h
+2023-12-26 00:39:15,190 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\Core\Inc\main.h_save
+2023-12-26 00:39:15,340 [INFO] CodeEngine:279 - Generated code: C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\Core\Inc\main.h
+2023-12-26 00:39:15,359 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\Core\Src\main.c_save
+2023-12-26 00:39:15,536 [INFO] CodeEngine:279 - Generated code: C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\Core\Src\main.c
+2023-12-26 00:39:16,269 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 193mS.
+2023-12-26 00:39:16,293 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-12-26 00:39:16,725 [INFO] ConfigFileManager:1457 - The Die is : DIE410
+2023-12-26 00:39:19,069 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2776mS.
+2023-12-26 00:39:19,070 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-12-26 00:39:19,076 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-12-26 01:03:27,428 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 718775576 Bytes (1073741824)
+2023-12-26 01:03:28,034 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 748591480 Bytes (1073741824)
+2023-12-26 01:03:29,388 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 807904536 Bytes (1073741824)
+2023-12-26 01:03:29,680 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-12-26 01:03:29,682 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-12-26 01:03:29,682 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2023-12-26 01:03:29,682 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-12-26 01:03:29,682 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2023-12-26 01:03:29,682 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-12-26 01:03:29,683 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.0.202307051724\\db\
+2023-12-26 01:03:29,933 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\MXTmpFiles\license.tmp_save
+2023-12-26 01:03:30,109 [INFO] CodeEngine:279 - Generated code: C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\MXTmpFiles\license.tmp
+2023-12-26 01:03:30,131 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\MXTmpFiles\gpio.tmp_save
+2023-12-26 01:03:30,348 [INFO] CodeEngine:279 - Generated code: C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\MXTmpFiles\gpio.tmp
+2023-12-26 01:03:30,439 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\Core\Src\stm32f1xx_it.c_save
+2023-12-26 01:03:30,763 [INFO] CodeEngine:279 - Generated code: C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\Core\Src\stm32f1xx_it.c
+2023-12-26 01:03:30,770 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\Core\Inc\stm32f1xx_it.h_save
+2023-12-26 01:03:30,870 [INFO] CodeEngine:279 - Generated code: C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\Core\Inc\stm32f1xx_it.h
+2023-12-26 01:03:30,914 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\Core\Src\stm32f1xx_hal_msp.c_save
+2023-12-26 01:03:31,137 [INFO] CodeEngine:279 - Generated code: C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\Core\Src\stm32f1xx_hal_msp.c
+2023-12-26 01:03:31,144 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\MXTmpFiles\system.tmp_save
+2023-12-26 01:03:31,243 [INFO] CodeEngine:279 - Generated code: C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\MXTmpFiles\system.tmp
+2023-12-26 01:03:31,276 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\Core\Inc\stm32f1xx_hal_conf.h_save
+2023-12-26 01:03:31,499 [INFO] CodeEngine:335 - Generated code: C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\Core\Inc\stm32f1xx_hal_conf.h
+2023-12-26 01:03:31,578 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\Core\Inc\main.h_save
+2023-12-26 01:03:31,741 [INFO] CodeEngine:279 - Generated code: C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\Core\Inc\main.h
+2023-12-26 01:03:31,784 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\Core\Src\main.c_save
+2023-12-26 01:03:32,112 [INFO] CodeEngine:279 - Generated code: C:\Users\ACER\STM32CubeIDE\workspace_1.13.0\26_12\Core\Src\main.c
+2023-12-26 01:03:32,944 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 197mS.
+2023-12-26 01:03:32,949 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-12-26 01:03:33,439 [INFO] ConfigFileManager:1457 - The Die is : DIE410
+2023-12-26 01:03:35,069 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2120mS.
+2023-12-26 01:03:35,070 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-12-26 01:03:35,075 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.

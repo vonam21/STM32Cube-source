@@ -1,0 +1,10 @@
+20:23:31 **** Incremental Build of configuration Debug for project doan ****
+make -j8 all 
+arm-none-eabi-size   doan.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12600	     20	   1716	  14336	   3800	doan.elf
+Finished building: default.size.stdout
+ 
+
+20:23:32 Build Finished. 0 errors, 0 warnings. (took 373ms)
+

@@ -1,0 +1,37 @@
+20:23:35 **** Incremental Build of configuration Debug for project press ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:131:6: warning: type of 'GPIO_EXTI_4' defaults to 'int' [-Wimplicit-int]
+  131 | void HAL_GPIO_EXTI_Callback( GPIO_EXTI_4)
+      |      ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:131:6: error: argument 'GPIO_EXTI_4' doesn't match prototype
+In file included from ../Core/Inc/stm32wbxx_hal_conf.h:236,
+                 from ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_gpio.h:307:19: error: prototype declaration
+  307 | void              HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_dma.h:28,
+                 from ../Core/Inc/stm32wbxx_hal_conf.h:204,
+                 from ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Core/Src/main.c:134:10: error: 'GPIO_Pin' undeclared (first use in this function); did you mean 'GPIO_PinState'?
+  134 |   UNUSED(GPIO_Pin);
+      |          ^~~~~~~~
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_def.h:57:26: note: in definition of macro 'UNUSED'
+   57 | #define UNUSED(X) (void)(X)      /* To avoid gcc/g++ warnings */
+      |                          ^
+../Core/Src/main.c:134:10: note: each undeclared identifier is reported only once for each function it appears in
+  134 |   UNUSED(GPIO_Pin);
+      |          ^~~~~~~~
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_def.h:57:26: note: in definition of macro 'UNUSED'
+   57 | #define UNUSED(X) (void)(X)      /* To avoid gcc/g++ warnings */
+      |                          ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+20:23:36 Build Failed. 4 errors, 1 warnings. (took 919ms)
+

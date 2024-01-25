@@ -1,0 +1,10 @@
+20:23:40 **** Incremental Build of configuration Debug for project uar ****
+make -j8 all 
+arm-none-eabi-size   uar.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21504	     48	   2480	  24032	   5de0	uar.elf
+Finished building: default.size.stdout
+ 
+
+20:23:40 Build Finished. 0 errors, 0 warnings. (took 370ms)
+
